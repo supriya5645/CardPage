@@ -1,0 +1,91 @@
+.card-list-container {
+    padding: 20px;
+  }
+  
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .card-list p {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+  }
+  
+  .card-list .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    font-size: 20px;
+    color: #999;
+  }
+  
+  .card-list .no-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    font-size: 20px;
+    color: #999;
+  }
+  
+  .card-list .no-cards:before {
+    content: "\f187";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 48px;
+    margin-right: 10px;
+    color: #999;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-type {
+    font-size: 12px;
+    color: #fff;
+    background-color: #333;
+    padding: 4px 8px;
+    border-radius: 4px;
+    align-self: flex-end;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-expiry {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .card-limit {
+    font-size: 14px;
+    color: #666;
+  }
+  
