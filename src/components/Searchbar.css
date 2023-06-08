@@ -1,11 +1,15 @@
 .search-bar {
     margin-bottom: 16px;
     position: relative;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    padding-top: 16px;
   }
   
   .search-input {
-    padding: 12px 16px;
-    width: 100%;
+    padding: 10px 16px; /* Adjust padding for a smaller size */
+    width: 300px; /* Set a specific width */
+    max-width: 100%; /* Limit the width to fit within the container */
     font-size: 16px;
     border: none;
     border-radius: 50px;

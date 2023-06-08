@@ -19,10 +19,10 @@ const CardList = ({ tab, filter, search }) => {
 
         const filteredCards = mockData.data.filter((card) => {
           if (tab === 'Your') {
-            return card.owner_id === 1;
-          } else if (tab === 'all') {
+            return card.owner_id === 123;
+          } else if (tab === 'All') {
             return true;
-          } else if (tab === 'blocked') {
+          } else if (tab === 'Blocked') {
             return card.status === 'blocked';
           }
           return false;

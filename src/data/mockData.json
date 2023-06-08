@@ -15,7 +15,7 @@
         "card_type": "burner",
         "expiry": "10/2023",
         "limit": 100,
-        "status": "active"
+        "status": "blocked"
       },
       {
         "name": "ABC",
@@ -31,7 +31,7 @@
         },
         "card_type": "subscription",
         "limit": 50,
-        "status": "active"
+        "status": "blocked"
       },
       {
         "name": "ABC",
@@ -48,7 +48,7 @@
         "card_type": "burner",
         "expiry": "12/2023",
         "limit": 200,
-        "status": "active"
+        "status": "blocked"
       },
       {
         "name": "ABC",
@@ -65,7 +65,7 @@
         "card_type": "burner",
         "expiry": "11/2023",
         "limit": 150,
-        "status": "active"
+        "status": "blocked"
       },
       {
         "name": "ABC",
@@ -812,7 +812,7 @@
         },
         "card_type": "subscription",
         "limit": 30,
-        "status": "active"
+        "status": "blocked"
       },
       {
         "name": "Books",
@@ -829,7 +829,7 @@
         "card_type": "burner",
         "expiry": "12/2023",
         "limit": 120,
-        "status": "active"
+        "status": "blocked"
       }
     ]
   }

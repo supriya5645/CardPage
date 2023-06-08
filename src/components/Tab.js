@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Tab.css"
 const Tab = ({ activeTab, onTabChange }) => {
-  const tabs = ['Your', 'all', 'blocked'];
+  const tabs = ['Your', 'All', 'Blocked'];
 
   return (
     <div className="tab">
