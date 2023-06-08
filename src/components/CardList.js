@@ -6,6 +6,8 @@ import './CardList.css'; // Import the CSS file for styling
 const CardList = ({ tab, filter, search }) => {
   const [cards, setCards] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [page, setPage] = useState(1);
+  const perPage = 10;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,7 +33,14 @@ const CardList = ({ tab, filter, search }) => {
           card.name.toLowerCase().includes(search.toLowerCase())
         );
 
-        setCards(searchedCards);
+        // Calculate pagination indexes
+        const startIndex = (page - 1) * perPage;
+        const endIndex = startIndex + perPage;
+
+        // Get the current page of cards
+        const paginatedCards = searchedCards.slice(startIndex, endIndex);
+
+        setCards(paginatedCards);
       } catch (error) {
         console.error(error);
       }
@@ -40,7 +49,15 @@ const CardList = ({ tab, filter, search }) => {
     };
 
     fetchData();
-  }, [tab, filter, search]);
+  }, [tab, filter, search, page]);
+
+  const handleNextPage = () => {
+    setPage((prevPage) => prevPage + 1);
+  };
+
+  const handlePrevPage = () => {
+    setPage((prevPage) => prevPage - 1);
+  };
 
   return (
     <div className="card-list-container">
@@ -54,6 +71,18 @@ const CardList = ({ tab, filter, search }) => {
         </div>
       ) : (
         <p>No matching cards found.</p>
+      )}
+
+      {cards.length > 0 && (
+        <div className="pagination">
+          <button onClick={handlePrevPage} disabled={page === 1}>
+            Previous
+          </button>
+          <span>{page}</span>
+          <button onClick={handleNextPage} disabled={cards.length < perPage}>
+            Next
+          </button>
+        </div>
       )}
     </div>
   );
