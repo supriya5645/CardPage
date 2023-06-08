@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CardPage/static/css/main.4d2b7e9d.css",
+    "main.js": "/CardPage/static/js/main.b674921f.js",
+    "index.html": "/CardPage/index.html",
+    "main.4d2b7e9d.css.map": "/CardPage/static/css/main.4d2b7e9d.css.map",
+    "main.b674921f.js.map": "/CardPage/static/js/main.b674921f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d2b7e9d.css",
+    "static/js/main.b674921f.js"
+  ]
+}
